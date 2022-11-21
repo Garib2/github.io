@@ -1,0 +1,48 @@
+<html>
+<head>
+ <title> Terminology </title>
+</head>
+<body>
+    <br>
+<p class="example"> <em>An element</em> is a construct consisting of an opening tag, some optional attributes,
+    some content, and a closing tag. Elements can contain any number of further elements,
+    which are, in turn, made up of tags, attributes, and content. </p> <br>
+<p class="example"> <em>A tag</em> indicates the start and end of an element. The opening tag can contain multiple
+    attributes, but it cannot contain other elements or tags, while the closing tag cannot contain anything but itself. In the preceding example, there are four tags: an opening &lt;p&gt;, an
+    opening &lt; em &gt;, a closing &lt; &#47; em &gt;, and a closing &lt; &#47; p &gt;. </p>
+    <br>
+
+<p class="example"> <em>Attributes</em> appear within tags, and they can only contain the value of the attribute, for
+    instance: </p>
+    <p class="example"> &lt; p class="example" &gt; >Here is some text, some of which is &lt; em &gt; emphasized &lt; &#47; em &gt; &lt; &#47; p &gt;</p>
+    <p class="example"> This example shows the class attribute. An attribute can contain multiple, space-separated
+        values, which is useful if you need to apply different classes to one element. For instance, if
+        you have two styles, one named example and another named reference, you can apply
+        them both to a paragraph like so: </p>
+    <p class="example"> &lt; p class="example reference" &gt;</p>
+    <br>
+<p class="example"> <em> Divs and spans </em> are two tags that, when used well, can help give your page a logical structure
+    and some extra hooks to apply any CSS or DOM scripting that you might need later. When
+    used badly, they can litter your document unnecessarily and make your markup, styling, and
+    scripting needlessly complicated. I cover these two tags again in more depth in Chapter 6,
+    but in this section I simply outline the main differences between and uses of them. </p>
+    <p class="example"> <em> A div </em> is used for marking out a block of content, such as the main
+        content block of your document, the main navigation, the header, or the footer. As such,
+        it is a block element. It can contain further elements, including more divs if required, but
+        it cannot be contained within an inline element. For example, a simple website may have
+        a header, a main column of content, a secondary column of content, and a footer.The (X)HTML for this could look like the following:</p>
+    <p class="example"> &lt;div id="header"&gt; </p>
+    <p class="example"> ... </p>
+    <p class="example"> &lt;&#47;div&gt;</p>
+    <p class="example"> These content blocks can then be positioned and displayed as required using CSS.</p>
+    <p class="example"> <em> A span </em> is used for marking out sections within a block element and sometimes inside
+        another inline element. It is an inline element, just the same as  &lt;em&gt;,  &lt;strong&gt;, and  &lt;a&gt;, except without any semantic meaning — it is simply a generic container. It can itself contain
+        further inline elements, including more spans.  For example, say you wish to color the first
+        two words of a paragraph red, keeping the rest of the paragraph black. You can use a span for this: </p>
+        <p class="example"> &lt;p&gt;&lt;span class="leadingWords"&gt;The first &lt;&#47;span&gt; two words of this paragraph can now be styled differently.&lt;&#47;p&gt; </p>
+        <p class="example"> A span cannot contain a block element — that is, you cannot place a &lt;div&gt; within a &lt;span&gt; and expect it to work the way you want.</p>
+    <br>
+</body>
+
+
+</html>
